@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassetta delle lettere</title>
+    <link rel="stylesheet" href="cassetta-chiusa.css" id="closed-box-css">
+    <link rel="stylesheet" href="cassetta-aperta.css" id="open-on-click" disabled>
+    <audio autoplay loop volume="0.5">
+        <source src="music/falling-music.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+<div class="sparkles"></div>
+<div class="container"></div>
+<div class="mailbox">
+    <img src="img\letter.png" alt="Love letter" class="loveletter" id="love-letter-image" onclick="mostraRiquadro()">
+    <img src="img\grass.png" alt="grass" class="grass" id="grass">
+    <div class="square" onclick="apriCassetta()"></div>
+    <div class="circle"></div>
+    <div id="pulsingheart" onclick="chiudiCassetta()"></div>
+    <div class="thin-rectangle"></div>
+    <div class="thin-rectangle-porta"></div>
+</div>
+<div class="rectangle"></div>
+<div id="valentine-box" class="valentine-box hidden" onclick="chiudiRiquadro()">
+    <div class="content">
+        Ciao Momo, <br><br>
+        In occasione di San Valentino, ho pensato di farti un regalo speciale che coinvolge tutti i tuoi sensi, per celebrare il nostro amore in modo completo e significativo.
+        Ecco come ho pensato a ciascun regalo per te, con tutto il mio amore e la mia dedizione:
+
+        Per il gusto, ho deciso di prepararti una cenetta speciale, con tutti i tuoi piatti preferiti.
+        Ogni boccone sarà un modo per esprimere il mio amore e la mia gratitudine per te, per tutto ciò che sei e per tutto ciò che fai per me.
+        Spero che ogni sapore ti faccia sentire avvolto dal calore del mio affetto.
+        <br>
+        <h4>Apri il regalo n° 2</h4>
+        Per l'olfatto, ho scelto una candela profumata con il tuo aroma preferito.
+        Ogni volta che accenderai questa candela, spero che il suo profumo ti ricordi i nostri momenti più dolci insieme e ti faccia sentire avvolto dall'amore che condividiamo.
+        <br>
+        <h4>Apri il regalo n° 3</h4>
+        Per la vista, ho pensato di regalarti un paio di occhiali che ti aiutino a vedere il mondo con chiarezza e bellezza.
+        Voglio che tu guardi attraverso questi occhiali e veda il mondo con gli occhi dell'amore, così come io vedo te ogni giorno: come una persona straordinaria e preziosa.
+        <br>
+        <h4>Apri il regalo n° 4</h4>
+        Per il tatto, ho scelto una pistola massaggiante, per farti sentire rilassato e coccolato ogni volta che ne avrai bisogno.
+        Voglio che ogni carezza di questa pistola massaggiante ti faccia sentire amato e apprezzato, proprio come tu mi fai sentire ogni giorno.
+        <br>
+        <h4>Apri il regalo n° 5</h4>
+        Per l'udito, ho pensato di regalarti un dispositivo che si illumina a ritmo di musica, così potremo ballare insieme al ritmo delle nostre canzoni preferite e creare ricordi indimenticabili.
+        Ogni volta che vedremo le luci danzanti, spero che ci ricordino i momenti felici che abbiamo condiviso e quelli che ci attendono nel futuro.
+        <br>
+        Questi regali sono solo una piccola espressione del mio amore per te, ma spero che ognuno di essi ti faccia sentire quanto sei amato e apprezzato da me, ogni giorno dell'anno.
+        Felice San Valentino, amore mio. I love you.
+        Con amore,
+        <br><br>
+        Tua Momo.
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
